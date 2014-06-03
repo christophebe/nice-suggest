@@ -1,0 +1,25 @@
+{
+  "name": "nice-suggest",
+  "version": "0.1.0",
+  "author": "Christophe Lombart <christophe.lombart@gmail.com>",
+  "description": "a Google suggest component that be used on command line or integrated into your node.js app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christophebe/nice-suggest.git"
+  },
+  "dependencies": {
+    "simple-proxies": "*",
+    "request": "*",
+    "underscore": "*",
+    "async" : "*",
+    "winston": "*"
+  },
+  "keywords": [
+    "Google",
+    "suggest",
+    "scraper",
+    "SEO"
+  ],
+  "license": "MIT"
+
+}
