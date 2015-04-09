@@ -24,10 +24,18 @@ describe('Test Suggest', function(){
         assert.equal(3, config.keywords[0].deep);
         assert.equal("en-us", config.language);
         assert.equal("crisis", config.resultKeywords[1]);
-     	 done();
-
-
+     	done();
     });
+    it('should update the maxDeep config', function(done) {
+        var config = suggest.config()
+                .setMaxDeep(10)
+                .setKeywords(["credit", "crisis", "strange world"])
+                .setLanguage("en-us");
+        assert.equal(10,config.maxDeep);
+        assert.equal(10,config.keywords[0].deep);
+        done();
+    });
+
   });
 
 
