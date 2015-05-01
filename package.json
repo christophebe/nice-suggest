@@ -1,6 +1,6 @@
 {
   "name": "nice-suggest",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Christophe Lombart <christophe.lombart@gmail.com>",
   "description": "a Google Keyword Suggest component that can be used on command line or integrated into your node.js app",
   "bin": {

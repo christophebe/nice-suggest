@@ -26,7 +26,7 @@ var findSuggests = function (language, keywords, maxDeep, proxyList) {
                   .setLanguage(language);
 
 
-  log.info("Start Google suggest for : " + keywords + " with a maxdeep of " + config.maxDeep);
+  log.info("Start Google suggest for : " + keywords + " with a maxdeep of " + config.maxDeep + " (can take time) ...");
 
   suggest.suggestKeywords(config, function(error, result) {
     if (error) {
@@ -44,7 +44,7 @@ var findSuggests = function (language, keywords, maxDeep, proxyList) {
 var findSuggestsWithProxies = function (language, keywords, maxDeep, proxyFile) {
 
     var proxyConfig = proxyLoader.config().setProxyFile(proxyFile);
-
+		console.log("Checking proxies ...");
     proxyLoader.loadProxyFile(proxyConfig, function(error, proxyList) {
         if (error) {
           log.error("Error during loading proxies : " + error);
