@@ -21,7 +21,7 @@ npm install nice-suggest --save
 ```
 
 
-#Command Line tools
+#Command Line tool
 
 Easy !, on your terminal :
 
