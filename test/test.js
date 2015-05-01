@@ -16,14 +16,14 @@ describe('Test Suggest', function(){
     it('should return a valid Config Object', function(done){
         var config = suggest.config()
                 //.setMaxDeep(10)
-                .setKeywords(["credit", "crisis", "strange world"])
+                .setKeywords(["seo", "marketing", "google"])
                 .setLanguage("en-us");
 
    	 	assert.equal(3, config.maxDeep);
-        assert.equal("credit", config.keywords[0].keyword);
+        assert.equal("seo", config.keywords[0].keyword);
         assert.equal(3, config.keywords[0].deep);
         assert.equal("en-us", config.language);
-        assert.equal("crisis", config.resultKeywords[1]);
+        assert.equal("marketing", config.resultKeywords[1]);
      	 done();
 
 
