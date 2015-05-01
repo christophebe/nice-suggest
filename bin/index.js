@@ -66,7 +66,7 @@ var getQuestions = function() {
 
   return [{"type": "input", "name" : "keywords", "message" : "a list of comma separated keywords"},
           {"type": "input", "name" : "language", "message" : "LanguageCode-ContryCode", "default" : "en-us"},
-          {"type": "input", "name" : "maxDeep", "message" : "maxDeep", "default" : 10},
+          {"type": "input", "name" : "maxDeep", "message" : "maxDeep", "default" : 5},
           {"type": "confirm", "name" : "withProxies", "message" : "With Proxies"},
           {"type": "input", "name" : "proxyFile", "message" : "proxyFile", default: "./proxies.txt",
            "when" : function(a){ return a.withProxies}
